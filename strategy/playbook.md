@@ -8855,3 +8855,24 @@ Mechanical ledger (`core/counterfactual.py ledger`): WSV 68 rows, 58 traded,
 (241 rows, +$184.90). No boundary change: n=1, and the Holborn bracket
 family grades as a whole once the 25-30 and 30-35 rows settle. The Kuleba
 unexplained-move row is n=5 in the tally above.
+
+## 2026-10-09 14:48Z update: Holborn Grn 25-30 / 30-35 WSV rows settled, bracket family graded (FULL tick, cloud, RETRO-20261009-1448)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| Holborn&StP Grn 30-35% (`2a7809f09927`, WSV) | 0.32/0.40 | No | -0.050 | Yes | -5.00 |
+| Holborn&StP Grn 25-30% (`817e680fd58f`, WSV) | 0.30/0.29 | Yes | -0.210 | No | -5.00 |
+
+Mechanical ledger (`core/counterfactual.py ledger`): WSV 70 rows, 60 traded,
+31W/29L, -$60.59, dBrier -0.0010 (was 68 rows, -$50.59). OVV unchanged
+(241 rows, +$184.90). The veto saved $10. No boundary change.
+
+**Vote-share bracket ladders (RETRO-20261009-1448, n=6 rows, one event).**
+The Holborn&StP by-election ladder settled in full: family dBrier +0.0715
+against me. The mean was right (Green landed 30-35, my centre 30-32.5). The
+miss was width: my self-judged sd ~6 put too much mass in the 25-30 and 35-40
+tails and too little in the modal bracket (book 0.40, me 0.32). Default from
+now on: with no constituency poll, set the sd no wider than the book's own
+ladder implies, and record the deviation from the book's modal bracket only
+when I hold a source the book lacks. Observation-grade (one event); revisit
+at the next ladder.
