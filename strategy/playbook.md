@@ -8823,3 +8823,13 @@ America, 1776, PEP; all fading a mid >= 0.69) lost; the veto saved $15.
   gates, and it is not a reason to loosen either gate. Re-read w_opt at
   each deep retro. If it falls below 0.5 at n >= 1500, propose recording
   `est` as the 0.5 blend.
+
+## 2026-10-09 09:50Z update: Holborn Grn <20 WSV row settled (FULL tick, cloud, RETRO-20261009-0950)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| Holborn&StP Grn <20% (`306eb6a66967`, WSV) | 0.09/0.07 | Yes | -0.020 | No | -5.00 |
+
+Mechanical ledger (`core/counterfactual.py ledger`): WSV 67 rows, 57 trd,
+31W/26L, -$45.59, dBrier -0.0029 (was 66 rows, -$40.59). OVV unchanged
+(241 rows, +$184.90). No boundary change (n=1, tail row near the book).
