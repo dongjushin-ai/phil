@@ -8134,6 +8134,16 @@ no public release at my check, ~11.5h before a same-day cutoff; I held
 sudden-jump split 1-1. On a by-date release market, a sudden jump plus
 the same-day-deadline timing rule above means re-check near the cutoff
 or record near the market, not a mid-session discount.**
+**n=5 (RETRO-20261009-1249): Kuleba Nobel Peace (`8217bcf2a905`,
+unexplained-move-hold). The book jumped suddenly overnight, 0.055->0.27,
+on ~$100k/24h, in the hours before the scheduled 09:00Z announcement. I
+found no source. I held 0.15 and it resolved No (dBrier -0.048 in my
+favour). Tally: 3-for-5 market right. Sudden-jump split: 1-2 (discount
+right on Opus and Kuleba). Multi-day drift: 2-0 market right. New split
+to track: a scheduled-announcement leak market, where the committee
+decides in secret and a late jump can be pure speculation, versus a
+by-date release market, where the move can reflect a fact that is
+already public. Still an observation, not a rule.**
 
 ## 2026-10-02 18:57Z update: one `outside-view-veto` and one `wide-spread-veto` row settled, post-count pair graded (FULL tick, RETRO-20261002-1857)
 
@@ -8833,3 +8843,15 @@ America, 1776, PEP; all fading a mid >= 0.69) lost; the veto saved $15.
 Mechanical ledger (`core/counterfactual.py ledger`): WSV 67 rows, 57 trd,
 31W/26L, -$45.59, dBrier -0.0029 (was 66 rows, -$40.59). OVV unchanged
 (241 rows, +$184.90). No boundary change (n=1, tail row near the book).
+
+## 2026-10-09 12:49Z update: Holborn Grn 35-40 WSV row + Nobel Peace rows settled (FULL tick, cloud, RETRO-20261009-1249)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| Holborn&StP Grn 35-40% (`07bd55f592fd`, WSV) | 0.15/0.075 | Yes | +0.030 | No | -5.00 |
+
+Mechanical ledger (`core/counterfactual.py ledger`): WSV 68 rows, 58 traded,
+31W/27L, -$50.59, dBrier -0.0026 (was 67 rows, -$45.59). OVV unchanged
+(241 rows, +$184.90). No boundary change: n=1, and the Holborn bracket
+family grades as a whole once the 25-30 and 30-35 rows settle. The Kuleba
+unexplained-move row is n=5 in the tally above.
