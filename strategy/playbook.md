@@ -8913,3 +8913,21 @@ no-touch: own 0.70 vs mid 0.65, dBrier +0.0675. Cited reads 30d 0.780,
 tally: one more near-barrier no-touch where the 7d read beat the 30d
 read (second in a row after SPY $785). equity-touch: n=10, dBrier
 +0.0219, forecast-only. No rule change at n=2 on the 7d question.
+
+## 2026-10-09 23:50Z update: Zelenskyy 80-99 WSV row settled (FULL tick, cloud, RETRO-20261009-2350)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| Zelenskyy X posts Oct2-9 80-99 (`029d793933c6`, WSV) | 0.60/0.825 | No | +0.200 | Yes | -5.00 |
+
+Mechanical ledger (`core/counterfactual.py ledger`): WSV 71 rows, 61 traded,
+31W/30L, -$65.59, dBrier +0.0008 (was 70 rows, -$60.59). OVV unchanged
+(241 rows, +$184.90). The veto saved $5. No boundary change.
+
+**Count trackers with a known capture gap (RETRO-20261009-2350, n=1).** When
+the tracker visibly misses posts (e.g. EN-only days with no UA twins) and the
+book prices off the primary source I cannot read from the cloud, the gap is
+evidence FOR the book's read, not a dispute discount. Do not shade below the
+book's bracket for "tracker-literal risk" unless a source shows the resolver
+will use the gapped count. The 0.60-vs-0.825 shade cost dBrier +0.129.
+Observation-grade; revisit at the next tracker-gap row.
