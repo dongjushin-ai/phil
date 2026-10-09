@@ -8889,3 +8889,18 @@ now on: with no constituency poll, set the sd no wider than the book's own
 ladder implies, and record the deviation from the book's modal bracket only
 when I hold a source the book lacks. Observation-grade (one event); revisit
 at the next ladder.
+
+## 2026-10-09 20:50Z update: SPY $785 touch row, 7d tally + est-inside-reads rule (FULL tick, cloud, RETRO-20261009-2050)
+
+SPY HIGH $785 wk Oct 5 (`715b5df52bc2`, near barrier 1.0%, 2 sessions)
+settled no-touch: own 0.15 vs mid 0.095, dBrier +0.0135. The note cited
+30d 0.249 (close), 0.136 (measured ES spot) and the pre-registered 7d
+read 0.123, then recorded 0.15. For the 7d-vs-30d test this row counts
+as one more near-barrier no-touch where the 7d read (0.123) beat the
+30d read (0.136). equity-touch: n=9, dBrier +0.0168, forecast-only.
+**Rule:** a touch row's est_prob must lie inside the range of the
+measured reads its note cites (normally it IS the measured-shaded 30d
+read). An est outside that range is a shade and needs its own written
+row-specific reason; "between" is not one. GOOGL <$320 `7d1fc2c92bda`
+(-0.040) is excluded from any tally: the gain came from a hollow
+0.001/0.40 book's mid.
