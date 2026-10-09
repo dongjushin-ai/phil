@@ -8239,6 +8239,19 @@ read. The 90-day legs stay forecast-only (`unvalidated-method`).
   bracket is `unvalidated-method` until the prior is back-tested on >= 3
   past Tudum weeks of the same title shape; until then the adjacent-leg
   bids are the outside view to beat. n=1.
+- **Low-count timing reads (RETRO-20261009-1948).** Khamenei Oct2-9 0-4
+  (22f337cf8d5d): count 4 with ~3h left, I read "posts only at 09-12Z" off
+  those four timestamps and recorded 0.90 vs a 0.503/0.941 book mid of
+  0.737; a fifth post resolved it No early (dBrier +0.267). Rule: when the
+  window has fewer than 10 posts, an hour-of-day argument may not move a
+  late-window estimate more than 0.10 from the book mid; a larger gap is
+  `unvalidated-method` and the note says so. Companion event (slow-regime
+  side of the ongoing-silence rule): Trump TS Oct2-9 8839a85fa21a /
+  d51845662a3e recorded the driftless bootstrap (0.58/0.37) while the note
+  showed a drift view of 0.85/0.12 that turned out right (+0.0136/+0.0377).
+  When the note's own regime view and the all-windows bootstrap differ by
+  >= 0.15, the recorded estimate states why the bootstrap wins. n=1 each;
+  re-grade at 3 events.
 
 ## DEEP-2026-10-03 rulings
 
