@@ -8904,3 +8904,12 @@ read). An est outside that range is a shade and needs its own written
 row-specific reason; "between" is not one. GOOGL <$320 `7d1fc2c92bda`
 (-0.040) is excluded from any tally: the gain came from a hollow
 0.001/0.40 book's mid.
+
+## 2026-10-09 22:48Z update: META $730 touch row (FULL tick, cloud, RETRO-20261009-2248)
+
+META HIGH $730 wk Oct 5 (`95bd9ba45048`, gap 1.2%, 2 sessions) settled
+no-touch: own 0.70 vs mid 0.65, dBrier +0.0675. Cited reads 30d 0.780,
+0.75x 0.709, 7d 0.642; est inside the range (rule respected). 7d-vs-30d
+tally: one more near-barrier no-touch where the 7d read beat the 30d
+read (second in a row after SPY $785). equity-touch: n=10, dBrier
++0.0219, forecast-only. No rule change at n=2 on the 7d question.
