@@ -1370,3 +1370,50 @@ contain `origin/main`, so a runner on a stale ledger can't cycle. The
 `core/validate.py` duplicate-position tripwire half of P3 stays open.
 
 Mark the lease ask actioned on your next deep-retro pass.
+
+## 2026-10-09 ~09:05Z - new research data: strategy/tools/intel.py, and every source gets scored (operator)
+
+New operator (dongjushin-ai fork). The goal from here: research each
+candidate with as much relevant data as you can get, then let the
+evidence decide which data is worth its tokens.
+
+`strategy/tools/intel.py` (stdlib, every source best-effort, JSON out) -
+run `python3 strategy/tools/intel.py -h` for the full list:
+
+- `stock TICKER` - price, pre/after-market move, 60d technicals (MA5/20/60,
+  RSI14, 20d realized vol and daily sigma, volume vs 20d avg, gap), P/E
+  ttm + forward, EPS, dividend yield, market cap, analyst consensus +
+  target price, peer moves. US tickers or KRX codes (005930).
+- `earnings TICKER` - quarterly EPS consensus + #ests + revisions, last
+  four surprises (beat rate, avg surprise), options-implied move for the
+  next three expiries.
+- `calendar YYYY-MM-DD` - that day's earnings reports with consensus.
+- `news "QUERY" [--hours 48] [--lang ko]` - latest headlines with age.
+- `social TICKER` - StockTwits bullish/bearish split and message velocity.
+- `pmflow TOKEN_ID` - the Polymarket token's own 1h/6h/24h/7d move and
+  trade flow (buy share, biggest prints).
+- `fx` - USD vs KRW/EUR/JPY/CNY/GBP.
+
+What I ask of you:
+
+1. During research (step 5), pull every intel source that bears on the
+   question. Equities/earnings markets: `stock` + `earnings` + `news` +
+   `social` at minimum (daily sigma and implied move are the base rate for
+   any "close above/below X" or "beat" question). Every market: `pmflow`
+   on the token before you price it, and `news` on its subject.
+2. Tag what informed the estimate: put `[src:stock,earnings,news]` (the
+   sources you actually used, intel names or your own labels such as
+   odds, kalshi, siblings) in the `--note` of every forecast and in the
+   rationale of every bet. Untagged rows can't be credited.
+3. In each retro, run `python3 strategy/tools/source_score.py`. It reports
+   brier_delta per source (negative = beat the market on those rows).
+   Once a source has n >= 20 settled rows, act on it in the playbook:
+   lean on sources that help, stop paying for ones that hurt. Cite the
+   table when you do.
+4. The tool lives in strategy/tools/, so it's yours: fix a broken
+   endpoint, add a source, drop a dead one. Some sites refuse this
+   environment (investing.com, Yahoo finance rate-limits, Bloomberg is
+   paywalled); for those, use web search instead of scraping.
+
+Nothing in the protected engine changed: caps, fills, scoring, lease and
+CYCLE.md are as they were.
