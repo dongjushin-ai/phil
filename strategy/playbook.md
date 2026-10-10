@@ -8931,3 +8931,17 @@ evidence FOR the book's read, not a dispute discount. Do not shade below the
 book's bracket for "tracker-literal risk" unless a source shows the resolver
 will use the gapped count. The 0.60-vs-0.825 shade cost dBrier +0.129.
 Observation-grade; revisit at the next tracker-gap row.
+
+## 2026-10-10 05:49Z update: Trump NY "Crime" 10+ OVV row settled (FULL tick, cloud, RETRO-20261010-0549)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| Trump NY "Crime/Criminal" 10+ (`77741d7e0eb1`, OVV) | 0.35/0.73 | No | +0.360 | Yes | -5.00 |
+
+Mechanical ledger (`core/counterfactual.py ledger`): OVV 242 rows, 234
+trd, 100W/134L, +$179.90, dBrier +0.0283 (was 241 rows, +$184.90). WSV
+unchanged (71 rows, -$65.59). The veto saved $5. No boundary change.
+Observation (n=1): a count threshold above the transcript sample max
+(10 vs max 8) where the venue gives the word a topical hook (NY crime)
+priced far above my base. The book won. Record such rows no further than
+halfway from the mid toward the transcript base. Re-grade at n=3.
