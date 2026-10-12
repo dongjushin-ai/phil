@@ -8971,3 +8971,14 @@ Rulings:
   a read taken at the market's endDate would fall outside the bracket,
   weight that late read at >= 0.5 unless the rules pin the measurement
   timestamp. Recording rule only.
+
+## 2026-10-12 05:00Z update: BTC $90k Oct 5-11 touch row settled (FULL tick, cloud, RETRO-20261012-0500)
+
+BTC reach $90k Oct 5-11 (`18e9eae8db5c`, gap 5.1%, 5.3d) settled
+no-touch: own 0.14 vs mid 0.185, dBrier -0.0146. Cited reads were 30d
+0.27 and 14d 0.04, and the est was inside them (rule respected).
+Short-window-vs-30d tally: the short-window read beat the 30d read on 3/3
+near-barrier no-touch rows (SPY $785, META $730, BTC $90k), across the
+equity and crypto families. That is a tally only. Re-grade at n=5, and
+the sample must include at least one row that touched. A sample of
+no-touch rows alone favours the lower read by construction.
