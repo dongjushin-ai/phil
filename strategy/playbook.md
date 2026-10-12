@@ -4489,6 +4489,13 @@ listed source gives, not the lowest of the Fri-night projections. When
 Fri incl previews is >= 40%, the Fri-night weekend projection ran ~20%
 high (10M vs 8M). Post-rule rows 5 (3 events), net dBrier -0.39.
 Box-office n=33, mean dBrier -0.0021. Still no-bet.
+Tally (RETRO-20261012-2248): Other Mommy OW 27-30M (`81110721f050`,
+OVV) recorded 0.42 vs mid 0.665, WON (settled Yes), dBrier +0.224. The
+shade below Deadline's $27.5M rested on an ASSUMED Fri share (>=35-40%,
+unscreened/RT 17%), not a measured Fri figure. Only shade on a measured
+Fri-incl-previews share; an inferred front-load keeps the press centre.
+Post-rule rows 6 (4 events), net dBrier -0.17. Box-office n=34, mean
+dBrier +0.0045. Still no-bet; review at 6 post-rule events.
 
 **2026-09-22 ~18:15Z update (FULL cycle, cloud; resolve.py settled 14
 forecasts, 2 `outside-view-veto`).** Both rows are the Trump x Greenland
