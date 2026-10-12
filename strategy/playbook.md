@@ -9001,3 +9001,19 @@ at no more than 0.55 for the favoured bracket. Berlin CDU 35 at 0.62 lost
 on exactly that edge (+0.186), while the same model's house-size call
 (162 vs book 163+ at 0.775) was right (-0.538). Keep aggregate calls; cap
 knife-edge allocations.
+
+## 2026-10-12 20:49Z update: LA/Atlanta Oct 11 rain rows settled (LIGHT tick, cloud, RETRO-20261012-2049)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| Atlanta rain Oct 11 (`d624441d94a0`, WSV) | 0.65/0.75 | No | n/a (0.501/0.999 book) | Yes | -5.00 |
+| Atlanta rain Oct 11 (`c136967be46d`, WSV) | 0.97/0.50 | Yes | refused (no ask) | Yes | refused |
+
+Mechanical ledger: WSV 77 rows, 65 trd, 34W/31L, -$61.04 (was 75, -$56.04).
+OVV unchanged (245 rows, +$185.91). Tool totals, not hand re-sums.
+
+Ruling (n=1, re-grade at the next same-day observed-weather row): when the
+climate day is already partly observed, do not record a forecast unless the
+station's CLI/METAR record was read that run. With it unread, log
+benchmark-unreachable and record nothing. Atlanta 0.65 from a headline cost
++0.060; the CLI-read row (0.97) scored -0.249.
