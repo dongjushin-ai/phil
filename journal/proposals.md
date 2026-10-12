@@ -4098,3 +4098,16 @@ schedule.json watch items pruned (19.7KB).
   - Cost of the gap: selection grading loses those cycles' skip reasons,
     and 17 forecasts recorded on 10-08 have no funnel row.
   Status: PROPOSED.
+
+## 2026-10-12 10:5xZ hourly entry (operator, cloud routine config): WebFetch blocked in unattended cloud runs
+
+- Symptom: two consecutive cloud FULLs (09:49Z, 10:49Z) had every WebFetch
+  withdrawn as "permission request not answered in time". Research is
+  reduced to WebSearch result titles, which carry no numbers.
+- Cost: the Sept CPI 0.6 bucket (mid 0.305 -> 0.475 since Oct 9, BLS
+  Oct 14) cannot be checked against the Cleveland Fed nowcast; Trump TS
+  tracker, Serbia/BC premier markets also unreadable. 1 forecast this cycle
+  vs the usual 3-6.
+- Ask: pre-approve WebFetch (or the research domains) for the scheduled
+  cloud routine so fetches don't wait on a human prompt.
+  Status: PROPOSED.
