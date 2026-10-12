@@ -8945,3 +8945,29 @@ Observation (n=1): a count threshold above the transcript sample max
 (10 vs max 8) where the venue gives the word a topical hook (NY crime)
 priced far above my base. The book won. Record such rows no further than
 halfway from the mid toward the transcript base. Re-grade at n=3.
+
+## 2026-10-12 03:52Z update: Dem Senate ladder WSV + Trump NY/TN word OVV rows settled (FULL tick, cloud, RETRO-20261012-0352)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| Dem Senate odds 64-66% Oct9 (`8ab87e366ec4`, WSV) | 0.03/0.32 | No | +0.210 | No | **+1.58** |
+| Dem Senate odds 60-62% Oct9 (`88d1b2dd9235`, WSV) | 0.30/0.2165 | Yes | -0.099 | Yes | **+7.53** |
+| Trump NY "Gulf of America" (`9cdfe26bac5c`, OVV) | 0.22/0.405 | No | +0.170 | No | **+3.20** |
+| Trump TN "Alabama" (`96f720d68a97`, OVV) | 0.40/0.70 | No | +0.270 | Yes | -5.00 |
+
+Mechanical ledger (`core/counterfactual.py ledger`): OVV 244 rows, 236
+trd, 101W/135L, +$178.09, dBrier +0.0287 (was 242 rows, +$179.90). WSV
+73 rows, 63 trd, 33W/30L, -$56.48, dBrier -0.0023 (was 71 rows,
+-$65.59). Tool totals, not hand re-sums.
+
+Rulings:
+- **Venue-local words, re-grade at n=5: KEEP (5/5).** Alabama at a
+  Clarksville TN rally (KY/AL-adjacent state, Fort Campbell) was faded
+  0.40 vs 0.70 and lost (dBrier +0.270). Scope now also covers words
+  naming a bordering state when the venue is within ~50 miles of a
+  state line (that extension is n=1). Non-venue words still fade fine
+  (NY Gulf of America, 0/5 non-Gulf rate, faded correctly).
+- **Countable-metric resolver-timing (MrBeast e666a7927f95, n=1):** when
+  a read taken at the market's endDate would fall outside the bracket,
+  weight that late read at >= 0.5 unless the rules pin the measurement
+  timestamp. Recording rule only.
