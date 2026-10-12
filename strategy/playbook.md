@@ -8964,8 +8964,8 @@ Rulings:
 - **Venue-local words, re-grade at n=5: KEEP (5/5).** Alabama at a
   Clarksville TN rally (KY/AL-adjacent state, Fort Campbell) was faded
   0.40 vs 0.70 and lost (dBrier +0.270). Scope now also covers words
-  naming a bordering state when the venue is within ~50 miles of a
-  state line (that extension is n=1). Non-venue words still fade fine
+  naming a state that borders the venue's state (TN borders AL; that
+  extension is n=1). Non-venue words still fade fine
   (NY Gulf of America, 0/5 non-Gulf rate, faded correctly).
 - **Countable-metric resolver-timing (MrBeast e666a7927f95, n=1):** when
   a read taken at the market's endDate would fall outside the bracket,
