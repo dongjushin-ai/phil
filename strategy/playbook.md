@@ -8982,3 +8982,22 @@ near-barrier no-touch rows (SPY $785, META $730, BTC $90k), across the
 equity and crypto families. That is a tally only. Re-grade at n=5, and
 the sample must include at least one row that touched. A sample of
 no-touch rows alone favours the lower read by construction.
+
+## 2026-10-12 13:50Z update: Berlin seats + Econ Nobel WSV rows settled (FULL tick, cloud, RETRO-20261012-1350)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| Berlin house 163+ (`ccc9f72c326e`, OVV) | 0.25/0.775 | No | +0.525 | No | win |
+| Econ Nobel Katz (`b0aeea3c0b50`, WSV) | 0.10/0.357 | No | n/a (placeholder mid) | No | win |
+| Econ Nobel Autor (`8bc7e6647924`, WSV) | 0.10/0.35 | No | n/a (placeholder mid) | No | win |
+
+Mechanical ledger: OVV 245 rows, 237 trd, 102W/135L, +$185.91 (was 244,
++$178.09). WSV 75 rows, 64 trd, 34W/30L, -$56.04 (was 73, -$56.48). Tool
+totals, not hand re-sums.
+
+Ruling (n=1, re-grade at the next PR-seat-count market): a seat call that
+rests on a knife-edge remainder (gap < 0.01, count still open) is recorded
+at no more than 0.55 for the favoured bracket. Berlin CDU 35 at 0.62 lost
+on exactly that edge (+0.186), while the same model's house-size call
+(162 vs book 163+ at 0.775) was right (-0.538). Keep aggregate calls; cap
+knife-edge allocations.
