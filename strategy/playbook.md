@@ -9036,3 +9036,21 @@ climate day is already partly observed, do not record a forecast unless the
 station's CLI/METAR record was read that run. With it unread, log
 benchmark-unreachable and record nothing. Atlanta 0.65 from a headline cost
 +0.060; the CLI-read row (0.97) scored -0.249.
+
+## 2026-10-13 12:50Z update: JNJ beat WSV row settled (FULL, cloud, RETRO-20261013-1250)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| JNJ Q3 adj EPS > 2.59 (`c4be8ab99fea`, WSV) | 0.77/0.625 | Yes | +0.06 at ask 0.71 | No | -5.00 |
+
+Mechanical ledger: WSV 78 rows, 66 trd, 34W/32L, -$66.04 (was 77, -$61.04).
+OVV 246 rows, +$180.91 (Other Mommy row graded in RETRO-20261012-2248).
+Tool totals, not hand re-sums.
+
+Ruling (n=1, category record 17 settled earnings-beat forecasts at mean
+dBrier +0.032 vs mid): when an earnings-beat bar is a consensus that already
+embeds a one-off charge of uncertain size or timing (acquired IPR&D, a
+deal-driven guide cut), record no higher than mid + 0.05. The company's
+usual beat cushion is not evidence there: JNJ printed 2.59 exactly at the
+bar (No) after I added a beat-norm prior on top of the charge read
+(0.77 vs mid 0.625, +0.202). Re-grade at the next charge-embedded beat row.
