@@ -312,6 +312,36 @@ Every invocation runs as one of three ticks:
    `--edge-class` is the playbook edge class the bet claims — score.py now
    splits brier_delta by it, so classify honestly, not aspirationally.
    Respect rejections — they are protected-cap enforcement, not errors to fix.
+6b. **Forced exploration bet** (operator, 2026-10-13; FULL cycles only, not
+   LIGHT or TRIGGERED): if step 6 placed zero bets, place exactly ONE $2
+   exploration bet anyway, so the ledger keeps getting settled outcomes to
+   learn from. Gates and vetoes stay as they are for real bets; this slot
+   sits beside them, never instead of them.
+   - Pick from the markets researched THIS cycle that have a step-5b
+     forecast. Prefer markets resolving within 7 days (faster feedback);
+     among those, take the outcome with the largest (est_prob - best ask)
+     from a fresh quote, on either side of the market (buying No is buying
+     the other token). A negative value is allowed when nothing is
+     positive: pick the least negative. Ties: tighter spread wins.
+   - est_prob is the forecast you already recorded, unchanged. Never
+     nudge an estimate to make an exploration pick look better.
+   - Place it with `--stake 2 --edge-class explore` and a rationale that
+     starts `[forced-explore]` and names the forecast id, the ask, and
+     which gate kept it from being a real bet (min_edge, outside-view
+     veto, spread, ...). `explore` is paper-only: it is not in
+     `real.allowed_edge_classes`, so it never gets a real twin.
+   - Protected caps still apply. If `place` rejects the pick (closed, no
+     asks, price bounds, duplicate open position), try the next-best pick
+     once; if that also fails, log `forced-explore: none (<reasons>)` in the
+     cycle line and move on.
+   - If no market at all was researched to a forecast this cycle, research
+     one (the screener's top divergence that has a reachable source) before
+     giving up. Zero researched markets on a FULL cycle is itself a
+     finding for the cycle log.
+   - Add `forced_explore` (the ledger id, or null with the reason) to the
+     funnel line. Retros grade `explore` bets as their own edge class in
+     `score.py` and never use them as evidence to loosen min_edge or a
+     veto by themselves: they are the tested sample of the gates.
 7. **Log**: append one line to `journal/cycles.log`:
    `<UTC ISO> cycle done: settled N, placed M, cash $X` (from ledger status).
    On a TRIGGERED cycle the detail that follows opens with

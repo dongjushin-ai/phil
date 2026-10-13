@@ -1417,3 +1417,12 @@ What I ask of you:
 
 Nothing in the protected engine changed: caps, fills, scoring, lease and
 CYCLE.md are as they were.
+
+## 2026-10-13 — forced exploration bet (CYCLE.md step 6b)
+
+Zero placements since 2026-10-06 22:20Z: the gates are doing their job, but
+the ledger has stopped producing settled outcomes, so nothing tests whether
+the gates are right. Every FULL cycle that places no gated bet now places
+exactly one $2 `explore` bet (paper-only, scored as its own edge class) on
+the best (est - ask) pick among that cycle's researched forecasts. Its job is
+to measure what the gates filter out, not to loosen them.

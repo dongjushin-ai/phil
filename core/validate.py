@@ -68,7 +68,7 @@ def check_iso_z(relpath, field, value):
         err(f"{relpath}: {field} is not a YYYY-MM-DDTHH:MM:SSZ timestamp: {value!r}")
 
 
-KNOWN_EDGE_CLASSES = {"info-race", "cross-market", "book-devig", "other"}
+KNOWN_EDGE_CLASSES = {"info-race", "cross-market", "book-devig", "other", "explore"}
 REAL_HARD_CEILINGS = {"max_stake_usd": 2.0, "daily_stake_cap_usd": 10.0,
                       "max_open_positions": 20}
 # Same story for the screening tier's load. Screening runs on subagents the

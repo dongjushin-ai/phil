@@ -131,7 +131,7 @@ def main():
     p.add_argument("--category", required=True,
                    help="agent-assigned category, e.g. earnings/soccer/esports/news")
     p.add_argument("--edge-class", required=True,
-                   choices=["info-race", "cross-market", "book-devig", "other"],
+                   choices=["info-race", "cross-market", "book-devig", "other", "explore"],
                    help="playbook edge class this bet claims (scored separately)")
     p.add_argument("--rationale", required=True, help="one-line reason (for the retro)")
     p.add_argument("--strategy-rev", default="", help="git rev of strategy/ used")
