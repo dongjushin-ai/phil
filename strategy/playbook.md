@@ -9072,3 +9072,16 @@ consensus, estimate P(print > bar) from the company's own trailing surprise
 distribution across 4-8 quarters, tail included (GS: +7..+44%), not from
 the gap to current consensus plus a typical-beat cushion. Do not supersede
 downward on consensus drift alone. Re-grade at the next stale-bar row.
+
+## 2026-10-13 17:50Z update: Hormuz dated-incident row settled (FULL, cloud, RETRO-20261013-1750)
+
+`09e63789f04c` Shipping targeted in Hormuz on Oct 7: own 0.60 vs mid 0.80,
+settled Yes, dBrier +0.120. Base daily rate read was ~0.75; the drop to
+0.60 rested only on "no Oct-7-dated report yet" at 02:40Z Oct 8.
+
+Ruling (n=1, re-grade at the next dated-incident row): on
+"<incident> on <date>" markets read within ~24h after the date closes, a
+missing dated report is an absence, not a fact (same logic as the news-cell
+process-shape bar exception). Record no lower than the trailing-7-day base
+daily-incident rate unless a positive quiet signal exists (official lull or
+ceasefire statement, a JMIC/UKMTO advisory saying no incidents that date).
