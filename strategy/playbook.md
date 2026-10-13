@@ -9085,3 +9085,19 @@ missing dated report is an absence, not a fact (same logic as the news-cell
 process-shape bar exception). Record no lower than the trailing-7-day base
 daily-incident rate unless a positive quiet signal exists (official lull or
 ceasefire statement, a JMIC/UKMTO advisory saying no incidents that date).
+
+## 2026-10-13 18:50Z update: Trump TS Oct 6-13 final-hour boundary miss (FULL, cloud, RETRO-20261013-1850)
+
+- **Final-hour boundary reads on postcount brackets.** Trump TS Oct 6-13
+  sat at 119 on xtracker from 11Z to 15:51Z; 120-139 needed one post. My
+  14:53Z blend (slow-regime burst-Poisson 0.14 with same-hour base 0.50 ->
+  0.35) and my 15:52Z read (8 min left, 0.10 vs mid 0.26) both lost: a
+  post landed in the 15Z hour and 120-139 resolved Yes (late rows +0.39
+  dBrier; early same-hours rows beat the mid). Rule: when a bracket turns
+  on whether >= 1 more post lands in the final 60 minutes, record within
+  0.10 of the book mid unless the note names a concrete reason the book is
+  wrong. Inside the final 15 minutes, "no post visible on the counter" is
+  not such a reason: the note states the counter's `lastSync` age and the
+  estimate keeps P(post made but not yet synced). Regime-vs-bootstrap
+  tally (RETRO-20261009-1948 companion) is now 1-1; that rule is unchanged.
+  n=1 event; re-grade at 3.
