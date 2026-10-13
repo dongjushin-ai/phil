@@ -8687,6 +8687,18 @@ one riding projection stays barred.
   regime-weighted rows do not beat the 365d-only figure in summed dBrier,
   the recent-regime weight is capped at 0.5 for bets. Until then the bet
   side is unchanged.
+  - Tally (running; RETRO-20261013-0848). Week 1/3 (Oct5-11, final count
+    12): regime minus 365d summed Brier = **+0.652** (regime worse) over
+    the 4 rows that wrote both components (61c8e5714347 +0.073,
+    92d6bb915bed +0.276, b0d11cdff258 +0.313, e69e1d757715 '7' -0.009).
+    Bet 38f9c08d4804 lost -$5. The week was a cluster burst (M7.7 Panama
+    + 4 aftershocks), but the count ex-cluster was still 7. Two more
+    settled weeks owed before the cap decision. Interim recording rule
+    from the same evidence: hours with no event are NOT a new fact for a
+    same-bracket re-entry or an upward revision past the 365d component
+    (0.41 -> 0.48 -> 0.61 rode 16h + 20h quiet spells; count went 2 -> 5
+    within 4h of the 0.61 row). The re-entry stays blocked by ledger.py
+    anyway; this stops the forecast drift.
 - **Validated-feed bets 0/3 since 09-30** (9a2944acc280, d5cfa982fa21,
   9b7c41da79ac; -$15). Each loss has its own named cause, and both are
   now covered by a rule: two mb->mww downgrades took the USGS '7' count
