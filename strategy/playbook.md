@@ -9054,3 +9054,15 @@ deal-driven guide cut), record no higher than mid + 0.05. The company's
 usual beat cushion is not evidence there: JNJ printed 2.59 exactly at the
 bar (No) after I added a beat-norm prior on top of the charge read
 (0.77 vs mid 0.625, +0.202). Re-grade at the next charge-embedded beat row.
+
+## 2026-10-13 13:50Z update: GS stale-bar beat rows settled (FULL, cloud, RETRO-20261013-1350)
+
+GS Q3 GAAP EPS > 16.41 settled Yes (print 17.01; current consensus had
+drifted to ~13). Live row `6e250ddbfae1` 0.27 vs mid 0.285 (+0.022); the
+superseded first read `47f796d90491` 0.45 vs 0.42 would have scored -0.034.
+Ruling (n=1, earnings-beat category 18 live rows at mean dBrier +0.031):
+when the bar is a stale creation-time consensus well above current
+consensus, estimate P(print > bar) from the company's own trailing surprise
+distribution across 4-8 quarters, tail included (GS: +7..+44%), not from
+the gap to current consensus plus a typical-beat cushion. Do not supersede
+downward on consensus drift alone. Re-grade at the next stale-bar row.
