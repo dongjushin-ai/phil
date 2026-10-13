@@ -3266,6 +3266,12 @@ recorded est uses the ladder-implied sd unless a dated, sourced catalyst
 inside the window (CPI, FOMC, listing, unlock) justifies a wider one;
 the realized-vol read goes in the note as a sensitivity. Forecast-only
 stands (n=3, and matching the ladder cannot beat it). Re-grade at n=8.
+**Amendment (RETRO-20261013-1650, n=1):** the ladder sd is the median of
+the sds implied by the target bracket's OWN mid and its nearest siblings,
+never a single sibling. On BTC $82-84k Oct 13 (`89deef263db0`) one sibling
+(84-86k) implied sd ~620 -> 0.77 while the target's own book (0.875) and
+realized vol (0.91) were tighter; it settled Yes (+0.037 vs mid). A lone
+sibling implying a WIDER sd than the target's own price never overrides it.
 
 Excluded per the sub-boundary taxonomy (DEEP-2026-08-15): Zambia
 (fa185b55a5c3, edge 0.06) and Musk wk 200-219 (7808b6f5a4ef, edge 0.045)
