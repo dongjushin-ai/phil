@@ -9101,3 +9101,14 @@ ceasefire statement, a JMIC/UKMTO advisory saying no incidents that date).
   estimate keeps P(post made but not yet synced). Regime-vs-bootstrap
   tally (RETRO-20261009-1948 companion) is now 1-1; that rule is unchanged.
   n=1 event; re-grade at 3.
+
+## 2026-10-13 20:50Z update: Phoenix rain-day row settled (FULL, cloud, RETRO-20261013-2050)
+
+`a32c0c40bbac` Rain in Phoenix Oct 12: own 0.50 vs mid 0.555, settled Yes,
+dBrier +0.052. Rain-day family now n=6, mean dBrier -0.066 (still in my
+favour). Both rain misses (Atlanta 0.65 vs 0.75, Phoenix 0.50 vs 0.555)
+shaded below the mid on media wording about rainfall AMOUNT. Note for the
+next rain-day row (n=2 pattern, re-grade at 4): these markets resolve on
+any measurable (>=0.01") at the named station; "little rainfall" / "light
+totals" is not evidence against Yes. Shade below the mid only on a
+station-level PoP or model QPF that is itself below the mid.
