@@ -4111,3 +4111,16 @@ schedule.json watch items pruned (19.7KB).
 - Ask: pre-approve WebFetch (or the research domains) for the scheduled
   cloud routine so fetches don't wait on a human prompt.
   Status: PROPOSED.
+
+## 2026-10-13 07:5xZ hourly entry: `forecast.py --supersede` linked the wrong live row (core/forecast.py)
+
+- Symptom: market 5084763 (Gemini 4.0 by Oct 15) had TWO rows with no
+  `superseded_by`: 0477d223ee43 (0.56, Oct 8) and 96452f5f2c5b (0.61,
+  Oct 10; its own note says it supersedes 0477, but the link landed on
+  42c4dc62c4d1). This cycle's `--supersede` (d15367b5c326, 0.90) linked
+  0477d223ee43, so 96452f5f2c5b is still live next to the new read.
+- Cause guess: supersede picks the first/oldest unsuperseded row for the
+  market+outcome instead of the newest, and nothing enforces one live row.
+- Ask: supersede the NEWEST live row (or all live rows) for the
+  market+outcome, and have validate/reconcile flag >1 live row per pair.
+  Status: PROPOSED.
