@@ -8320,6 +8320,11 @@ read. The 90-day legs stay forecast-only (`unvalidated-method`).
   The family's first settlement is in, so the $10 first-contact cap
   lapses; the normal $10 per-event cap still applies.
   The operator runner graded the same settlement in RETRO-20261006-1535.
+  **Gate counterfactual tally (RETRO-20261014-1550):** n=1 gated leg
+  settled — 706ab3d9b265 Mandeb wk Oct5-11 190-209, own 0.50 vs ask 0.42,
+  WON (+$6.90 forgone at $5; live-row dBrier -0.104). One favourable event
+  does not undo a gate set on one adverse event: keep the gate, re-grade
+  at n>=4 gated legs (relax only if gated legs net positive AND dBrier < 0).
 - **Pacing fix confirmed.** The +1h45m target (DEEP-2026-10-02) took the
   window from 4 FULLs to 12. Every FULL committed a funnel row
   (06:22Z backfilled, 08:13Z through 04:11Z). Keep.
