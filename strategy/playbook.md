@@ -9150,3 +9150,16 @@ ladder mean or the dated street-consensus median, whichever is sourced
 more recently; the Cleveland nowcast only breaks ties and is never the
 reason to record a leg further from the mid. Moves rows toward the book
 only; it cannot create a bet.
+
+## 2026-10-14 20:50Z update: Phoenix Oct 13 rain-day WSV row settled (FULL, cloud, RETRO-20261014-2050)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| Phoenix rain Oct 13 (`590546c784a9`, WSV) | 0.98/0.502 | Yes | refused (ask 0.999) | Yes | refused |
+
+Mechanical ledger: WSV 86 rows, 73 trd, 39W/34L, -$60.96 (refusal, totals
+unchanged by this row). Tool totals, not hand re-sums.
+
+Ruling: none new. Second CLI-read rain-day row, dBrier -0.248; confirms
+the 2026-10-12 CLI-read rule. Edge exists but the Yes ask is gone once the
+station shows rain.
