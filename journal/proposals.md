@@ -4124,3 +4124,14 @@ schedule.json watch items pruned (19.7KB).
 - Ask: supersede the NEWEST live row (or all live rows) for the
   market+outcome, and have validate/reconcile flag >1 live row per pair.
   Status: PROPOSED.
+
+## 2026-10-14 11:5xZ (cloud FULL) - more evidence for P4 (funnel-line presence in CI)
+
+- 3 of 4 FULL cycles on 10-14 before this one committed no
+  `strategy/funnel.jsonl` line: 01:54Z (eea414c lineage), 09:54Z (4e7fb0a),
+  10:53Z (7153b8a). Each cycles.log line carries full funnel prose, so the
+  cause is the same drift P4 describes, not a missing research step.
+  All three backfilled this cycle (flagged `"backfill": true`,
+  pool_by_query lost). Ask unchanged: CI check that each `cycle:` commit
+  whose cycles.log line says FULL also appends a funnel line.
+  Status: PROPOSED (evidence added).
