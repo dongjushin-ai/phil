@@ -9128,3 +9128,20 @@ within 0.05 of the mid unless a sourced, dated consensus points to another
 bracket. Both months the base-effect mixture was flatter than the book and
 the book's modal bracket printed (7 Sep rows net dBrier about +0.20 against
 me). Both OVV vetoes on this ladder were right.
+
+## 2026-10-14 14:50Z update: US Sep CPI ladders settled (FULL, cloud, RETRO-20261014-1450)
+
+20 live rows across five bracket families, net dBrier -0.057 vs mid
+(eggs -0.040, headline YoY -0.055, core MoM -0.028, headline MoM +0.036,
+core YoY +0.031). The two losing families both shaded the book's ladder
+mean toward the Cleveland Fed nowcast, which ran low (headline MoM 0.53 vs
+print 0.6; core MoM 0.20 vs 0.3; core YoY 2.39 vs 2.6). Aug core was the
+same miss (nowcast 0.20, print 0.3). Supersessions toward the street
+consensus saved +0.111.
+
+Ruling (core: n=2 months, headline: n=1; re-grade after the Oct CPI
+print): on US CPI bracket ladders, centre the estimate on the book's
+ladder mean or the dated street-consensus median, whichever is sourced
+more recently; the Cleveland nowcast only breaks ties and is never the
+reason to record a leg further from the mid. Moves rows toward the book
+only; it cannot create a bet.
