@@ -9112,3 +9112,19 @@ next rain-day row (n=2 pattern, re-grade at 4): these markets resolve on
 any measurable (>=0.01") at the named station; "little rainfall" / "light
 totals" is not evidence against Yes. Shade below the mid only on a
 station-level PoP or model QPF that is itself below the mid.
+
+## 2026-10-14 03:50Z update: China Sep CPI ladder settled (LIGHT tick, cloud, RETRO-20261014-0350)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| China CPI 0.9-1.0% Sep26 (`fc10ca9ae3bb`, OVV) | 0.50/0.62 | No | +0.10 at No ask 0.40 | Yes | -5.00 |
+
+Mechanical ledger: OVV 247 rows, 239 trd, 102W/137L, +$175.91 (was 246,
++$180.91). WSV unchanged. Tool totals, not hand re-sums.
+
+Ruling (n=2 events, Aug + Sep 2026; re-grade after the Oct print in
+mid-Nov): on China CPI YoY bracket ladders, hold the modal-bracket estimate
+within 0.05 of the mid unless a sourced, dated consensus points to another
+bracket. Both months the base-effect mixture was flatter than the book and
+the book's modal bracket printed (7 Sep rows net dBrier about +0.20 against
+me). Both OVV vetoes on this ladder were right.
