@@ -9178,3 +9178,13 @@ the mid (-0.012). The 0.45 supersede moved on a Zacks consensus that sat at
 the band edge and lost (+0.221). On quarter-total bands for monthly
 reporters, known months set the estimate, and a consensus near the edge is
 weak evidence against them.
+
+## 2026-10-14 23:50Z update: Trump AZ rally TSMC/Taiwan + Hormuz forecasts settled (LIGHT, cloud, RETRO-20261014-2350)
+
+No veto rows; no counterfactual table change.
+
+- **Venue-local words tally: 6/6.** "TSMC or Taiwan" at the Bullhead City
+  AZ rally (AZ = TSMC fabs) recorded at/above mid 0.75 vs 0.725, settled
+  Yes (dBrier -0.013). KEEP.
+- Non-venue fade "Hormuz" 0.32 vs 0.335 settled Yes (dBrier +0.020).
+  n=1, judgment-method, noise-level. No change.
