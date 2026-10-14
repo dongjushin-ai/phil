@@ -9163,3 +9163,18 @@ unchanged by this row). Tool totals, not hand re-sums.
 Ruling: none new. Second CLI-read rain-day row, dBrier -0.248; confirms
 the 2026-10-12 CLI-read rule. Edge exists but the Yes ask is gone once the
 station shows rain.
+
+## 2026-10-14 22:50Z update: PGR Q3 combined-ratio WSV row settled (LIGHT, cloud, RETRO-20261014-2250)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| PGR Q3 CR 86-89% (`4fa60c708611`, WSV, supersedes `69df14eb3f0a` 0.62) | 0.45/0.715 | No | ~0.22 < 0.30 | Yes | -$5.00 (veto saved) |
+
+Mechanical ledger: WSV 87 rows, 74 trd, 39W/35L, -$65.96. Tool totals, not
+hand re-sums.
+
+Note (n=1, no rule): the superseded 0.62 row (monthly 8-K arithmetic) beat
+the mid (-0.012). The 0.45 supersede moved on a Zacks consensus that sat at
+the band edge and lost (+0.221). On quarter-total bands for monthly
+reporters, known months set the estimate, and a consensus near the edge is
+weak evidence against them.
