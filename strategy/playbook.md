@@ -9235,3 +9235,12 @@ WTI refusals add rows, not pnl). Tool totals, not hand re-sums.
   AI release-date anchoring rule, not evidence against it. Rule KEPT;
   shade views still re-grade at n=8 (next: Oct 15 rung `c7896412e75b`,
   mid 0.32, shade 0.23).
+
+## 2026-10-15 11:50Z update: Wuhan Paolini v Kartal forecast settled (LIGHT, cloud, RETRO-20261015-1150)
+
+- `60dd30580ee6` 0.56/0.545 market-agrees, Kartal won, dBrier +0.017.
+  With no multi-book devig feed (odds.py key absent on cloud), record a
+  tennis moneyline forecast AT the cross-venue mid (Kalshi/PM), not nudged
+  toward the seeded favourite on form narrative: no-feed upward nudges
+  are 0/2 (this row; Paolini v Snigur `1c9ebd5d0038` 0.574/0.565). Small-n
+  recording note, not a bet rule; re-grade at 5 such rows.
