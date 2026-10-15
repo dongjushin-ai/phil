@@ -9188,3 +9188,33 @@ No veto rows; no counterfactual table change.
   Yes (dBrier -0.013). KEEP.
 - Non-venue fade "Hormuz" 0.32 vs 0.335 settled Yes (dBrier +0.020).
   n=1, judgment-method, noise-level. No change.
+
+## 2026-10-15 00:50Z update: AZ rally remainder + WTI Oct 14 ladder settled (FULL, cloud, RETRO-20261015-0050)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| WTI >$94 Oct 14 (`bdab91c457f6`, WSV) | 0.93/0.825 | Yes | refused (entry 0.96) | Yes | refused |
+| WTI >$96 Oct 14 (`2db898e2b418`, WSV) | 0.05/0.3375 | No | refused (entry 0.999) | No | refused |
+| Trump TS Oct6-13 120-139 (`35b0d6df5f4f`, WSV, superseded) | 0.63/0.516 | Yes | +0.039 | Yes | +3.46 |
+| Trump TS Oct6-13 100-119 (`09f997b125f4`, WSV, superseded) | 0.36/0.425 | No | -0.05 | No | +2.25 |
+| Trump TS Oct6-13 120-139 (`724c002c981d`, WSV, superseded) | 0.48/0.411 | Yes | +0.046 | Yes | +6.52 |
+| Trump TS Oct6-13 120-139 (`561239049e9a`, WSV, superseded) | 0.78/0.722 | Yes | -0.101 | Yes | +0.68 |
+| Trump TS Oct6-13 100-119 (`dafdc946a6cf`, WSV, superseded) | 0.21/0.195 | Yes | -0.12 | No | -5.00 |
+| Trump TS Oct6-13 120-139 (`a526bc90a19e`, WSV, superseded) | 0.70/0.63 | Yes | +0.003 | Yes | +2.17 |
+| Trump TS Oct6-13 100-119 (`816cb27e41ef`, WSV, superseded) | 0.29/0.285 | Yes | -0.04 | No | -5.00 |
+
+The seven Trump TS rows were graded in prose at 2026-10-13 18:50Z without
+ids (reconcile check 5); entered here from `core/counterfactual.py ledger
+--json`. Mechanical ledger: WSV 89 rows, 74 trd, 39W/35L, -$65.96 (the two
+WTI refusals add rows, not pnl). Tool totals, not hand re-sums.
+
+- **Venue-local words tally: 8/8** (Nevada 0.80/0.785, Chip 0.72/0.70 both
+  Yes). KEEP.
+- Exact-slogan phrase recorded above mid ("America First" 0.30/0.25 lost;
+  RNC Sep10 0.62 lost): 0/2. Note only, re-grade at 4.
+- WTI close ladder, final ~1.3h: anchoring on the NYMEX settle plus
+  spot-basis with sd ~$0.5 beat the book by net dBrier -0.288 on three
+  strikes. The book's wide legs had no fillable side (both WSV rows refused
+  by the fill band). Method stays; it creates forecasts, not bets, unless
+  a side is fillable inside the band.
+
