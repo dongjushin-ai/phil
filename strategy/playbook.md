@@ -9226,3 +9226,12 @@ WTI refusals add rows, not pnl). Tool totals, not hand re-sums.
   Sep10 0.62 No). Interim rule until the 4th row grades: an exact-slogan
   forecast with no transcript base rate is recorded at or below the mid,
   not above it. Re-grade at 4.
+
+## 2026-10-15 06:50Z update: Fable 5.2+ by-Oct14 forecast settled (FULL, cloud, RETRO-20261015-0650)
+
+- `11aaaf89b4d5` 0.28/0.395 resolved No, dBrier -0.078. Later-than-market
+  AI release reads now **1/8** right (was 0/7). The row was recorded off
+  the ladder mid without a primary source — a compliance miss against the
+  AI release-date anchoring rule, not evidence against it. Rule KEPT;
+  shade views still re-grade at n=8 (next: Oct 15 rung `c7896412e75b`,
+  mid 0.32, shade 0.23).
