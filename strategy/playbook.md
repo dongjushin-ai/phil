@@ -9218,3 +9218,11 @@ WTI refusals add rows, not pnl). Tool totals, not hand re-sums.
   by the fill band). Method stays; it creates forecasts, not bets, unless
   a side is fillable inside the band.
 
+
+## 2026-10-15 05:50Z update: MT rally "America First" forecast settled (FULL, cloud, RETRO-20261015-0550)
+
+- Exact-slogan phrase recorded above mid: **0/3** (Kalispell MT "America
+  First" `f7e5edb8aeb7` 0.25/0.185 No, dBrier +0.028; AZ 0.30/0.25 No; RNC
+  Sep10 0.62 No). Interim rule until the 4th row grades: an exact-slogan
+  forecast with no transcript base rate is recorded at or below the mid,
+  not above it. Re-grade at 4.
