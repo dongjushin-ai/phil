@@ -9267,3 +9267,15 @@ add rows, not pnl). Tool totals from `core/counterfactual.py ledger
   the mid, take the number `forecast.py` reports, not a hand-read ladder
   price. Both Oct 15 and Oct 17 shade notes (0.23, 0.20) would
   have beaten the recorded value; count them toward the n=8 shade re-grade.
+
+## 2026-10-18 20:2xZ: Binance klines reachable from cloud via data-api.binance.vision (FULL, cloud)
+
+Crypto touch rows on 10-15 and 10-18 (bff6f3ca75bb, 86252e60e092) note
+"Binance blocked from cloud" and fall back to Coinbase/Gemini spot. That
+was api.binance.com. `https://data-api.binance.vision/api/v3/klines` and
+`/ticker/price` answered from this cloud runner on 2026-10-18 (SOLUSDT 1d,
+1h and ticker, 20:18Z). It is Binance's own public market-data mirror, so
+it serves the resolver's own 1m-low series for "dip to / reach" markets.
+For crypto touch rows, take the window low and spot from it first. Note
+the cross-feed source only when it is unreachable. The family stays
+`unvalidated-method` forecast-only; this changes the input, not the gate.
