@@ -9244,3 +9244,26 @@ WTI refusals add rows, not pnl). Tool totals, not hand re-sums.
   toward the seeded favourite on form narrative: no-feed upward nudges
   are 0/2 (this row; Paolini v Snigur `1c9ebd5d0038` 0.574/0.565). Small-n
   recording note, not a bet rule; re-grade at 5 such rows.
+
+## 2026-10-18 10:15Z update: 19-forecast backlog after a 69h cloud gap (FULL, cloud, RETRO-20261018-1015)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| Philadelphia rain Oct 14 (`d8d383a3ab5c`, WSV) | 0.97/0.09 | Yes | refused (no ask) | Yes | refused |
+| Dallas rain Oct 14 (`61708f7caffa`, WSV) | 0.08/0.98 | No | refused (no bid) | No | refused |
+
+Mechanical ledger: WSV 91 rows, 74 trd, 39W/35L, -$65.96 (two refusals
+add rows, not pnl). Tool totals from `core/counterfactual.py ledger
+--json`, not hand re-sums.
+
+- CLI/METAR rain-day reads: 4/4 right, all unfillable once the station
+  shows (or rules out) rain. Rule KEPT; still forecasts, never bets.
+- **EPS-beat legs recorded above the mid: 0/2** (SCHW 0.40/0.385, IBKR
+  0.50/0.475, both missed, +0.036). Interim recording note: record an
+  earnings-beat leg AT the mid unless a dated estimate revision or a
+  sourced whisper number moves it. Re-grade at 5 rows.
+- AI release ladder: `728e987357f5` recorded 0.24 vs mid 0.22 with a
+  0.20 shade note - above the mid in the "sooner" direction, against the
+  anchoring rule. Second compliance miss in the family (after
+  `11aaaf89b4d5`). Both Oct 15 and Oct 17 shade notes (0.23, 0.20) would
+  have beaten the recorded value; count them toward the n=8 shade re-grade.
