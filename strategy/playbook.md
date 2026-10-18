@@ -9262,8 +9262,8 @@ add rows, not pnl). Tool totals from `core/counterfactual.py ledger
   0.50/0.475, both missed, +0.036). Interim recording note: record an
   earnings-beat leg AT the mid unless a dated estimate revision or a
   sourced whisper number moves it. Re-grade at 5 rows.
-- AI release ladder: `728e987357f5` recorded 0.24 vs mid 0.22 with a
-  0.20 shade note - above the mid in the "sooner" direction, against the
-  anchoring rule. Second compliance miss in the family (after
-  `11aaaf89b4d5`). Both Oct 15 and Oct 17 shade notes (0.23, 0.20) would
+- AI release ladder: `728e987357f5` recorded 0.24 as "ladder mid" (funnel
+  row) while the forecast row stores mid 0.22 at record: when anchoring at
+  the mid, take the number `forecast.py` reports, not a hand-read ladder
+  price. Both Oct 15 and Oct 17 shade notes (0.23, 0.20) would
   have beaten the recorded value; count them toward the n=8 shade re-grade.
