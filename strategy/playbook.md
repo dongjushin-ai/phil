@@ -9290,3 +9290,14 @@ Mechanical ledger (`core/counterfactual.py ledger`): OVV 248 rows, 240
 trd, 102W/138L, +$170.91, dBrier +0.0279. The veto saved $5. No boundary
 change. A no-book soccer home-favourite read (forecast slice n=7, +0.022
 vs the mid) is weaker than the book. Re-grade that slice at n=15.
+
+## 2026-10-19 05:15Z update: ETH $2,300 / SOL $100 dip rows settled (LIGHT tick, cloud, RETRO-20261019-0515)
+
+Both Oct 12-18 dip rows settled no-touch. Each was recorded above its
+touch.py read by an upward "1m-wick capture" shade (ETH 0.078 -> 0.11,
+SOL 0.66 -> 0.68). Unshaded, both would have scored better
+(ETH -0.0337 vs -0.0277 recorded; SOL +0.0493 vs +0.0761). Wick-shade
+tally: 0/2, combined cost 0.0328 dBrier. Tally only, not a rule: one
+weekly window, both no-touch, so the lower read wins by construction.
+Re-grade at n=5 with at least one touched row. Family stays
+`unvalidated-method`, forecast-only (2026-09-24 ruling unchanged).
