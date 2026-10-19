@@ -9279,3 +9279,14 @@ it serves the resolver's own 1m-low series for "dip to / reach" markets.
 For crypto touch rows, take the window low and spot from it first. Note
 the cross-feed source only when it is unreachable. The family stays
 `unvalidated-method` forecast-only; this changes the input, not the gate.
+
+## 2026-10-19 00:15Z update: Ferro Carril Oeste OVV row settled (FULL, cloud, RETRO-20261019-0015)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| Ferro Carril Oeste win Oct17/18 (`3ee947b566ae`, OVV) | 0.50/0.645 | No | +0.145 | Yes | -5.00 |
+
+Mechanical ledger (`core/counterfactual.py ledger`): OVV 248 rows, 240
+trd, 102W/138L, +$170.91, dBrier +0.0279. The veto saved $5. No boundary
+change. A no-book soccer home-favourite read (forecast slice n=7, +0.022
+vs the mid) is weaker than the book. Re-grade that slice at n=15.
