@@ -9310,3 +9310,25 @@ tally: 0/2, combined cost 0.0328 dBrier. Tally only, not a rule: one
 weekly window, both no-touch, so the lower read wins by construction.
 Re-grade at n=5 with at least one touched row. Family stays
 `unvalidated-method`, forecast-only (2026-09-24 ruling unchanged).
+
+## 2026-10-19 07:14Z update: China Q3 GDP ladder settled; consensus-ladder rule (2) enacted (LIGHT tick, cloud, RETRO-20261019-0714)
+
+China Q3 2026 GDP 4.3-4.6 resolved Yes. Every record put the consensus
+bracket below the book: 2ae729db32f5 (No 0.55 vs mid 0.335, OVV) and
+53f5be64354f (Yes 0.63 vs mid 0.765, OVV), with a net +0.272 dBrier.
+Sibling 4.0-4.3 2bc36453dac5 (0.12 vs 0.0795) erred the same way. No
+note sourced its dispersion. OVV CF -$10 (avoided losses). Mechanical
+OVV line: 250 rows, 242 trd, 102W/140L, +$160.91.
+
+**This is the third consensus-centred ladder where the book's modal
+concentration beat an unsourced dispersion** (after BanRep Sep and ISM
+Mfg Sep, see "Consensus-centred econ ladders" above). Rule (2) is now in
+force. On consensus-centred econ ladders (GDP, rates decisions,
+PMI/ISM, sentiment brackets), BETS on legs outside the book's top two
+brackets are forecast-only. They stay forecast-only until a ladder whose
+note cites a sourced consensus-miss series (named source, n quarters or
+months) settles agent-closer than the book. Modal-pair legs and CPI/PPI
+single-threshold rows (the validated mechanical-econ family) are
+unaffected. Judgment call recorded: the rule's wording was "conventional
+sd"; the China notes used an own-model chain or recalled history
+instead. Both are unsourced, which is what the rule was guarding against.
