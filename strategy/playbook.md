@@ -3020,6 +3020,15 @@ apart; with one read, the row is still `no-anchor`/veto territory. Also
 measured: RYD (returnyoutubedislikeapi) lagged the YouTube watch page by
 only ~19k views at 20:20Z Sep25, so a RYD read stamped with its fetch time
 counts as a dated read when YouTube 429s.
+**RYD freshness caveat (2026-10-19 06:2xZ FULL, cloud):** RYD's viewCount is
+cached, not live. Polled once a minute 06:27-06:49Z Oct19, both RE3_PGwDwhw
+(MrBeast d2, gaining ~1M/h) and rz1B4B2yBZY (GTA VI trailer) returned the
+identical count for 22+ minutes. So the fetch time is only an upper bound
+on the count's true timestamp. A pace from two RYD reads is dated only when
+each read is a fresh value: poll until the number changes and stamp the read
+at the first changed value, or take reads far enough apart (>=3h) that an
+unknown cache age of up to ~1h cannot move the projection across a bracket
+edge. Otherwise the row stays `no-anchor`.
 
 **2026-09-04 update (LIGHT tick 06:29Z, settled by resolve.py; 4 rows,
 two OpenAI Astra release-timeline markets, two sequential snapshots
