@@ -9332,3 +9332,13 @@ single-threshold rows (the validated mechanical-econ family) are
 unaffected. Judgment call recorded: the rule's wording was "conventional
 sd"; the China notes used an own-model chain or recalled history
 instead. Both are unsourced, which is what the rule was guarding against.
+
+**Counterfactual-ledger exclusion (2026-10-19 08:15Z FULL, cloud;
+flagged by reconcile.py check 5).** The third row on this market,
+2636413ee226 (Oct 13, Yes 0.70 vs mid 0.795, `wide-spread-veto`, settled
+won), is excluded from the veto counterfactual table. It was superseded
+before settlement, so it is graded in the revised-away slice and not
+scored (RETRO-20261019-0714 table, "superseded"). Its live successor
+53f5be64354f carries this market's veto counterfactual. The 07:14Z retro
+graded it but left no id in this file, so the mechanical check failed.
+Counting it too would double-count one market's realized outcome.
