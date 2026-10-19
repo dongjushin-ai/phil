@@ -9342,3 +9342,14 @@ scored (RETRO-20261019-0714 table, "superseded"). Its live successor
 53f5be64354f carries this market's veto counterfactual. The 07:14Z retro
 graded it but left no id in this file, so the mechanical check failed.
 Counting it too would double-count one market's realized outcome.
+
+## 2026-10-19 13:21Z update: USGS M5.5+ weekly "11" leg settled (LIGHT tick, cloud, RETRO-20261019-1321)
+
+Both rows on gamma 5473543 resolved No (count 9 at window close). Live
+row 0c1eb8702690 (market-agrees, own 0.01 vs mid 0.028, dBrier -0.0007,
+CF refused: entry 0.999). **Counterfactual-ledger exclusion:** the
+superseded wide-spread-veto row 450d9c73a9b4 (own 0.06 vs mid 0.165,
+settled lost Yes / No won) is excluded from the veto counterfactual
+table, same reasoning as the 2636413ee226 exclusion above: superseded
+before settlement, graded in the revised-away slice, and its live
+successor carries this market. No rule change.
